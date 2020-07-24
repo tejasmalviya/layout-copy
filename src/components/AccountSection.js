@@ -1,6 +1,5 @@
 import React from 'react';
 import {Select,FormControl,MenuItem,InputLabel,FormControlLabel,Checkbox} from "@material-ui/core";
-import './css/App.css';
 
 function AccountSection() {
     const [account, setAccount] = React.useState('');
@@ -10,7 +9,7 @@ function AccountSection() {
     return (
         <div className="container-fluid" >
             <h6 className="small">Purchase in Account</h6>
-            <FormControl className="fullWidth">
+            <FormControl className="fullWidth" >
 
                 <InputLabel>Select Account</InputLabel>
                 <Select

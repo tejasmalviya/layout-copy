@@ -1,7 +1,6 @@
 import React from "react";
-import { Line } from "react-chartjs-2";
-import {ButtonGroup,Button} from "@material-ui/core";
-import "./css/App.css";
+import {Line} from "react-chartjs-2";
+import FilterByDay from "./FilterByDay";
 
 // the graph data would generally be received as props from Api endpoints
 
@@ -74,17 +73,8 @@ const options = {
 function GraphSection() {
     return (
         <div className="container-fluid">
-
             <Line data={ data } options={ options }/>
-
-            <div className="container-fluid flex-container filterSection">
-                <h6>Filter by recent days: </h6>
-                <ButtonGroup  className="buttonGroup">
-                    <Button id="1" className="">3 Days</Button>
-                    <Button  id="2">7 Days</Button>
-                    <Button id="3" >1 Months</Button>
-                </ButtonGroup>
-            </div>
+            <FilterByDay/>
         </div>
     );
 }

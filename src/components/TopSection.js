@@ -1,7 +1,6 @@
 import React from 'react';
 import Cards from "./Cards";
 import AccountSection from "./AccountSection";
-import "./css/App.css";
 import {Typography,Tooltip} from "@material-ui/core";
 import InfoIcon from '@material-ui/icons/Info';
 
@@ -52,8 +51,8 @@ function TopSection() {
     return (
         <div className="container-fluid m-3 mainSection">
             <Typography variant="h6" className="mt-3">Saving Plan Parameters</Typography>
-            <div className="flex-container justify-content-start">
-                <div className="flex-container parameterContainer">
+            <div className="flexContainer justify-content-start">
+                <div className="flexContainer parameterContainer fullWidth">
                     <Cards name={savingPlanType}/>
                     <Cards name={savingPlanTerm}/>
                     <Cards name={paymentOption}/>

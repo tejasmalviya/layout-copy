@@ -1,7 +1,6 @@
 import React from 'react';
 import {Input,InputLabel,InputAdornment,FormControl,FormHelperText,Paper,Link} from "@material-ui/core";
 import AssessmentIcon from '@material-ui/icons/Assessment';
-import './css/App.css';
 
 function GraphInfoSection() {
     const [values, setValues] = React.useState({
@@ -13,7 +12,7 @@ function GraphInfoSection() {
     };
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid pl-4">
             <FormControl className="halfWidth">
             <InputLabel className="text-dark font-weight-bolder">Hourly Commitment</InputLabel>
             <Input
@@ -35,10 +34,10 @@ function GraphInfoSection() {
                 <h6 className="pt-2">Expected Target Coverage </h6>
                 <h6>0.99%</h6>
                 <AssessmentIcon/>
-                <Link className="pl-1" id="assessment">View your current coverage</Link>
+                <Link className="pl-1 underLine">View your current coverage</Link>
             </div>
 
-            <div>
+            <div className="pt-3">
                 <h6>Estimated Net Additional Montly Savings</h6>
                 <h6>$5,028.64</h6>
                 <p className="infoText">Estimated saving produced by savings plan purchased</p>

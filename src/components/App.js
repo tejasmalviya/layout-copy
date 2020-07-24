@@ -5,7 +5,6 @@ import BottomSection from "./BottomSection";
 
 function App() {
   return (
-
     <div className="App">
       <TopSection/>
       <BottomSection/>
