@@ -1,14 +1,14 @@
 import React from 'react';
 import './css/App.css';
 import TopSection from "./TopSection";
-import GraphInfoSection from "./GraphInfoSection";
+import BottomSection from "./BottomSection";
 
 function App() {
   return (
 
     <div className="App">
       <TopSection/>
-      <GraphInfoSection/>
+      <BottomSection/>
     </div>
   );
 }

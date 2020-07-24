@@ -4,10 +4,14 @@ import './index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from "./theme";
 
 ReactDOM.render(
   <React.StrictMode>
-      <App />
+      <ThemeProvider theme={theme}>
+         <App />
+      </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

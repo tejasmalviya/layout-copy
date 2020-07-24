@@ -21,17 +21,6 @@ body {
   margin-top: -6%;
 }
 
-/*Top section Styling*/
-div.parameterContainer{
-  flex-basis: 72%;
-  justify-content: start;
-}
-
-.accountContainer{
-  flex-basis: 26%;
-}
-
-
 /*Graph Info Section Styling*/
 .infoText{
   font-size: 10px!important;
@@ -50,4 +39,28 @@ div.parameterContainer{
 }
 .underLine{
   text-decoration: underline;
+}
+
+/*Graph section Styling*/
+#activeTab{
+  border-color:dodgerblue;
+  color: dodgerblue;
+}
+.buttonGroup{
+  margin-top: -5px;
+  padding-left: 20px;
+}
+.filterSection{
+  place-content: center;
+  width: 100%;
+}
+
+/*Top section Styling*/
+div.parameterContainer{
+  flex-basis: 72%;
+  justify-content: start;
+}
+
+.accountContainer{
+  flex-basis: 26%;
 }
