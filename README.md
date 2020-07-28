@@ -1,3 +1,16 @@
+Cloudwiry React App
+
+To Run the Project:
+
+//Step 1: git clone [repository url]
+
+//Step 2: cd [local repository]
+
+//Step 3: npm install
+
+//Step 4: npm start
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

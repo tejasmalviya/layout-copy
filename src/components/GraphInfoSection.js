@@ -14,8 +14,9 @@ function GraphInfoSection() {
     return (
         <div className="container-fluid pl-4">
             <FormControl className="halfWidth">
-            <InputLabel className="text-dark font-weight-bolder">Hourly Commitment</InputLabel>
+            <InputLabel className="text-dark" >Hourly Commitment</InputLabel>
             <Input
+                color="secondary"
                 id="standard-adornment-amount"
                 value={values.amount}
                 onChange={handleChange('amount')}
@@ -25,10 +26,10 @@ function GraphInfoSection() {
             </FormControl>
 
             <Paper elevation={0} id="awsPaper">
-                <h6 className="pl-2">
+                <h6 className="pl-2 pt-2">
                     AWS Recommendations: $37.50
                 </h6>
-                <p className="infoText pl-2 pb-2">7 day analysis by AWS </p>
+                <p className="infoText pl-2 pb-3">7 day analysis by AWS </p>
             </Paper>
             <div>
                 <h6 className="pt-2">Expected Target Coverage </h6>

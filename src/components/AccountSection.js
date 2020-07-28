@@ -1,30 +1,29 @@
 import React from 'react';
-import {Select,FormControl,MenuItem,InputLabel,FormControlLabel,Checkbox} from "@material-ui/core";
+import {FormControlLabel,Checkbox,TextField,InputAdornment,Divider,IconButton} from "@material-ui/core";
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import KeyboardArrowDownTwoToneIcon from '@material-ui/icons/KeyboardArrowDownTwoTone';
 
 function AccountSection() {
-    const [account, setAccount] = React.useState('');
-    const handleChange = (event) => {
-        setAccount(event.target.value);
-    };
+
     return (
-        <div className="container-fluid" >
-            <h6 className="small">Purchase in Account</h6>
-            <FormControl className="fullWidth" >
+        <div className="container-fluid pr-4" >
+            <TextField
+                label="Purchase in Account"
+                placeholder="Select Account"
+                color="secondary"
+                className="fullWidth"
+                InputProps={{
+                    endAdornment: (
+                        <InputAdornment>
+                            <Divider id="divider" orientation="vertical" />
+                            <IconButton>
+                                <KeyboardArrowDownTwoToneIcon/>
+                            </IconButton>
+                        </InputAdornment>
+                    )
+                }}
+            />
 
-                <InputLabel>Select Account</InputLabel>
-                <Select
-                    value={account}
-                    onChange={handleChange}
-                >
-                    <MenuItem value="">
-                        <em>None</em>
-                    </MenuItem>
-                    <MenuItem value={10}>Account One</MenuItem>
-                    <MenuItem value={20}>Account Two</MenuItem>
-                    <MenuItem value={30}>Account three</MenuItem>
-                </Select>
-
-            </FormControl>
             <div>
             <FormControlLabel
                 value="accountPurchase"

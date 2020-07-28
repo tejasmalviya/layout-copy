@@ -13,6 +13,10 @@ body {
   width: 100%;
   overflow: hidden;
 }
+button:focus{
+  outline: none!important;
+}
+
 
 /*Cards Styling*/
 .cardOptions{
@@ -24,6 +28,7 @@ body {
   font-size: 10px!important;
   color: rgba(121, 97, 97, 0.82)!important;
   width: 60%;
+  margin-top: -5px;
 }
 #awsPaper{
   width:50%;
@@ -57,4 +62,10 @@ div.parameterContainer{
 
 .accountContainer{
   flex-basis: 28%;
+}
+
+#divider{
+  height: 20px;
+  width: 2px;
+  margin-right: -5px;
 }

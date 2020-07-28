@@ -49,7 +49,7 @@ const paymentOption={
 function TopSection() {
 
     return (
-        <div className="container-fluid m-3 mainSection">
+        <div className="container-fluid ml-3 mainSection">
             <Typography variant="h6" className="mt-3">Saving Plan Parameters</Typography>
             <div className="flexContainer justify-content-start">
                 <div className="flexContainer parameterContainer fullWidth">
