@@ -5,7 +5,7 @@ import BottomSection from "./BottomSection";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <TopSection/>
       <BottomSection/>
     </div>

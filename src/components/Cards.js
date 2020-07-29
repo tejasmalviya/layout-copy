@@ -4,9 +4,9 @@ import {RadioGroup,Radio,FormControlLabel} from "@material-ui/core";
 function Cards(props) {
     return (
         <div className="cards flex-grow-1 fullWidth">
-            <h6 className="text-black-50 pt-3 pb-2">{props.name.title} </h6>
+            <h6 className="text-black-50 pt-2 pb-2">{props.name.title} </h6>
 
-            <div className="container-fluid">
+            <div className="pl-1" style={{marginTop:"-1%"}}>
                 <RadioGroup name={props.name.title}>
                         {
                                 props.name.options.map((option)=>
@@ -14,7 +14,7 @@ function Cards(props) {
                                             className="cardOptions"
                                             value={option.value}
                                             control={ <Radio color="primary"/> }
-                                            label={<div>{option.value}{option.tags}
+                                            label={<div style={{fontSize:"15px"}}>{option.value}{option.tags}
                                             </div> }> }
                                         </FormControlLabel>
                                 )

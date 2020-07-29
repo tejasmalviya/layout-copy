@@ -15,8 +15,8 @@ export class FilterByDay extends React.Component{
     {
         return(
             <div className="container-fluid flexContainer filterSection">
-                <h6>Filter by recent days: </h6>
-                <ButtonGroup  className="pl-3">
+                <p>Filter by recent days: </p>
+                <ButtonGroup  className="pl-3" size="small">
 
                 <Button
                     id="1"

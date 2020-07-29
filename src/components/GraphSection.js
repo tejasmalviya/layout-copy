@@ -24,7 +24,6 @@ const data = {
     ]
 };
 
-
 const options = {
     title:{
       display:true,
@@ -72,7 +71,7 @@ const options = {
 
 function GraphSection() {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid pt-4">
             <Line data={ data } options={ options }/>
             <FilterByDay/>
         </div>

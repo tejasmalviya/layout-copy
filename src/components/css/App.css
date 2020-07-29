@@ -7,7 +7,7 @@
   width: 100%;
 }
 .halfWidth{
-  width: 50%;
+  width: 48%;
 }
 body {
   width: 100%;
@@ -16,22 +16,24 @@ body {
 button:focus{
   outline: none!important;
 }
-
+p {
+  margin-bottom: 0 !important;
+}
 
 /*Cards Styling*/
 .cardOptions{
-  margin-top: -3%;
+  margin-top: -4%;
 }
 
 /*Graph Info Section Styling*/
 .infoText{
-  font-size: 10px!important;
+  font-size: 11px!important;
   color: rgba(121, 97, 97, 0.82)!important;
   width: 60%;
-  margin-top: -5px;
+  padding-bottom: 2%;
 }
 #awsPaper{
-  width:50%;
+  width:48%;
   background-color: rgba(203, 199, 199, 0.25);
   padding-top: 5px;
   padding-left: 5px;
@@ -56,12 +58,12 @@ button:focus{
 
 /*Top section Styling*/
 div.parameterContainer{
-  flex-basis: 72%;
+  flex-basis: 75%;
   justify-content: start;
 }
 
 .accountContainer{
-  flex-basis: 28%;
+  flex-basis: 25%;
 }
 
 #divider{

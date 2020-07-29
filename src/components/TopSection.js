@@ -1,7 +1,7 @@
 import React from 'react';
 import Cards from "./Cards";
 import AccountSection from "./AccountSection";
-import {Typography,Tooltip} from "@material-ui/core";
+import {Tooltip} from "@material-ui/core";
 import InfoIcon from '@material-ui/icons/Info';
 
 const savingPlanType={
@@ -49,8 +49,8 @@ const paymentOption={
 function TopSection() {
 
     return (
-        <div className="container-fluid ml-3 mainSection">
-            <Typography variant="h6" className="mt-3">Saving Plan Parameters</Typography>
+        <div className="container-fluid p-4 mb-5  mainSection">
+            <h6>Saving Plan Parameters</h6>
             <div className="flexContainer justify-content-start">
                 <div className="flexContainer parameterContainer fullWidth">
                     <Cards name={savingPlanType}/>

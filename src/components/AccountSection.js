@@ -1,12 +1,11 @@
 import React from 'react';
 import {FormControlLabel,Checkbox,TextField,InputAdornment,Divider,IconButton} from "@material-ui/core";
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import KeyboardArrowDownTwoToneIcon from '@material-ui/icons/KeyboardArrowDownTwoTone';
 
 function AccountSection() {
 
     return (
-        <div className="container-fluid pr-4" >
+        <div>
             <TextField
                 label="Purchase in Account"
                 placeholder="Select Account"
